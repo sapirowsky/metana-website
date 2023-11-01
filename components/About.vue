@@ -18,6 +18,19 @@ onMounted(() => {
       offsetX * 4
     }deg) rotateX(${offsetY * 4}deg) scale3d(1, 1, 1)`
   })
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show-contact")
+      } else {
+        entry.target.classList.remove("show-contact")
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll(".text-hidden")
+  hiddenElements.forEach((el) => observer.observe(el))
 })
 </script>
 <template>
@@ -36,8 +49,10 @@ onMounted(() => {
         />
       </div>
       <div class="w-full md:w-1/2">
-        <h1 class="text-4xl md:text-6xl font-bold">Welcome to Metana</h1>
-        <p class="text-xl md:text-2xl pl-4">
+        <h1 class="text-4xl md:text-6xl font-bold text-hidden">
+          Welcome to Metana
+        </h1>
+        <p class="text-xl md:text-2xl pl-4 text-hidden">
           We specialize in the production of intricate and precise steel
           constructions, as well as metal processing in the Silesian region. Our
           expertise serves leading manufacturers in the electro-energy,
@@ -53,5 +68,10 @@ onMounted(() => {
 <style>
 #tilt-image {
   transform: perspective(1000px) rotateY(7deg) scale3d(1, 1, 1);
+}
+.text-hidden {
+  transform: translateX(100%);
+  opacity: 0.5;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 </style>

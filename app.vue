@@ -26,7 +26,7 @@ useHead({
   },
   bodyAttrs: {
     class:
-      "bg-white text-black dark:bg-[#13151a] dark:text-white transition-all ",
+      "bg-white text-black dark:bg-[#13151a] dark:text-white transition-all",
   },
   link: [
     {
