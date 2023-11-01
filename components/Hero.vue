@@ -1,3 +1,4 @@
+<script setup></script>
 <template>
   <div
     id="home"
@@ -42,7 +43,7 @@
           <div
             class="bg-[#0071bc] border w-5/6 h-5/6 custom-bg-border overflow-hidden"
           >
-            <!-- model here -->
+            <ModelContainer />
           </div>
         </div>
       </div>

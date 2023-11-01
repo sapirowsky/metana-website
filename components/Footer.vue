@@ -1,5 +1,5 @@
 <script setup>
-const creator = "<KamilKruszona/>"
+const creator = "<KamilKruszona />"
 const currentYear = new Date().getFullYear()
 let copyrightYearText = currentYear === 2023 ? 2023 : `2023 - ${currentYear}`
 </script>
@@ -17,7 +17,7 @@ let copyrightYearText = currentYear === 2023 ? 2023 : `2023 - ${currentYear}`
       </div>
       <div class="tooltip tooltip-top" data-tip="Desgin & development">
         <NuxtLink
-          class="text-sm flex items-center"
+          class="text-sm flex items-center text-gray-500"
           to="https://kamilkruszona.dev/"
           target="_b"
         >

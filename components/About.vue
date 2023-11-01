@@ -70,7 +70,7 @@ onMounted(() => {
   transform: perspective(1000px) rotateY(7deg) scale3d(1, 1, 1);
 }
 .text-hidden {
-  transform: translateX(100%);
+  transform: translateX(50%);
   opacity: 0.5;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }

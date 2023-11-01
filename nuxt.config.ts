@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxtjs/robots",
     "@nuxtjs/i18n",
     "@nuxt/image",
+    "@tresjs/nuxt",
   ],
   i18n: {
     locales: [

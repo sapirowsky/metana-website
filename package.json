@@ -21,6 +21,9 @@
     "@nuxt/image": "^1.0.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/robots": "^3.0.0",
-    "@nuxtjs/tailwindcss": "^6.8.0"
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@tresjs/cientos": "^3.5.1",
+    "@tresjs/nuxt": "^1.2.2",
+    "three": "^0.158.0"
   }
 }
