@@ -1,8 +1,5 @@
 <script setup>
-const { scene, nodes, animations, materials } = await useGLTF("/scene.glb", {
-  draco: true,
-})
-console.log(nodes)
+const { scene } = await useGLTF("/scene.glb")
 </script>
 <template>
   <primitive :object="scene" />
