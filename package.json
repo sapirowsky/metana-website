@@ -18,6 +18,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@averjs/nuxt-compression": "^1.2.2",
     "@nuxt/image": "^1.0.0",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/robots": "^3.0.0",
