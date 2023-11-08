@@ -27,9 +27,7 @@ onMounted(() => {
           name="my-accordion-2"
           checked="checked"
         />
-        <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
-        </div>
+        <div class="collapse-title text-xl font-medium">Are you hiring?</div>
         <div class="collapse-content">
           <p>hello</p>
         </div>
