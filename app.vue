@@ -52,9 +52,9 @@ const selected = ref(languages[0])
   </header>
   <main>
     <Hero />
-    <About />
-    <Faq />
-    <Contact />
+    <LazyAbout />
+    <LazyFaq />
+    <LazyContact />
   </main>
-  <Footer />
+  <LazyFooter />
 </template>

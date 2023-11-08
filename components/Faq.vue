@@ -40,7 +40,7 @@ onMounted(() => {
         <label for="second" class="sr-only">Click to see answer</label>
         <input id="second" type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          What machines do we use?
         </div>
         <div class="collapse-content">
           <p>hello</p>
@@ -52,7 +52,7 @@ onMounted(() => {
         <label for="third" class="sr-only">Click to see answer</label>
         <input id="third" type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Click to open this one and close others
+          Which materials do we usually work with?
         </div>
         <div class="collapse-content">
           <p>hello</p>

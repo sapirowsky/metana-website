@@ -8,7 +8,10 @@
         <Part />
       </TresMesh>
     </Suspense>
-    <TresDirectionalLight :position="[-4, 8, 4]" :intensity="1" cast-shadow />
-    <TresDirectionalLight :position="[4, -8, -4]" :intensity="1" cast-shadow />
+    <TresDirectionalLight :position="[-4, 8, 4]" :intensity="1" />
+    <TresDirectionalLight :position="[-4, -8, 4]" :intensity="1" />
+    <TresDirectionalLight :position="[4, -8, -4]" :intensity="1" />
+    <TresDirectionalLight :position="[4, 8, -4]" :intensity="1" />
+    <TresDirectionalLight :position="[4, 8, 4]" :intensity="1" />
   </TresCanvas>
 </template>
