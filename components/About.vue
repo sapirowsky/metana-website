@@ -57,8 +57,8 @@ onMounted(() => {
           constructions, as well as metal processing in the Silesian region. Our
           expertise serves leading manufacturers in the electro-energy,
           automotive, and machinery industries. With a legacy dating back to
-          1994, we have been a reliable presence in both national and
-          international markets.
+          1994, started by P.P.H.U. METANA and P.P.H.U. METANA S.C. We have been
+          a reliable presence in both national and international markets.
         </p>
       </div>
     </div>
@@ -66,9 +66,9 @@ onMounted(() => {
 </template>
 
 <style>
-#tilt-image {
+/* #tilt-image {
   transform: perspective(1000px) rotateY(7deg) scale3d(1, 1, 1);
-}
+} */
 .text-hidden {
   transform: translateX(10%);
   opacity: 0.5;
