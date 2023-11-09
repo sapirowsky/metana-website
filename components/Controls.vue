@@ -10,7 +10,7 @@ const switchLocalePath = useSwitchLocalePath()
         tabindex="0"
         class="btn bg-transparent border-none hover:bg-transparent p-0"
       >
-        <UiLanguage class="fill-black dark:fill-white" />
+        <UiLanguage class="fill-black dark:fill-white h-6 w-6 md:h-8 md:w-8" />
         <UiArrowFacedDown class="fill-gray-800 dark:fill-gray-300" />
       </label>
       <ul

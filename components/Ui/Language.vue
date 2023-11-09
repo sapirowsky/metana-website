@@ -1,6 +1,5 @@
 <template>
   <svg
-    class="h-5 w-5 fill-current"
     xmlns="http://www.w3.org/2000/svg"
     width="20"
     height="20"
