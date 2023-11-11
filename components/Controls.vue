@@ -17,8 +17,16 @@ const switchLocalePath = useSwitchLocalePath()
         tabindex="0"
         class="dropdown-content z-[1] menu p-2 shadow bg-gray-300 dark:bg-gray-800 rounded-box w-max"
       >
-        <li><a>Item 1</a></li>
-        <li><a>Item 2</a></li>
+        <li v-for="lan in locales" :key="lan.code">
+          <NuxtLink>
+            <span
+              class="badge badge-sm badge-outline font-mono font-bold tracking-widest opacity-50"
+            >
+              {{ lan.code }}
+            </span>
+            <p>{{ lan.name }}</p>
+          </NuxtLink>
+        </li>
       </ul>
     </div>
     <div class="tooltip tooltip-left" data-tip="Change theme">
