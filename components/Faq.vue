@@ -50,7 +50,11 @@ onMounted(() => {
           What machines do we use?
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <TransitionGroup
+            enter-active-class="opacity-1 transition-opacity duration-200"
+            leave-active-class="opacity-0 transition-opacity duration-200"
+          >
+          </TransitionGroup>
         </div>
       </div>
       <div
