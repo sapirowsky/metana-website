@@ -1,0 +1,63 @@
+{
+    "navigation": {
+        "about": "O nas",
+        "faq": "FAQ",
+        "contact": "Kontakt"
+    },
+    "controls": {
+        "changeTheme": "Zmień Motyw"
+    },
+    "hero": {
+        "heading": "Spawanie. Obróbka. Frezowanie.",
+        "question": "Co robimy",
+        "answer": "Specjalizujemy się w produkcji precyzyjnych konstrukcji stalowych oraz obróbce metali w Polsce.",
+        "learnMore": "Dowiedz się więcej",
+        "contact": "Skontaktuj się z nami!"
+    },
+    "about": {
+        "imgAlt": "Certyfikat ISO",
+        "heading": "Witaj w Metanie",
+        "paragraph": "Specjalizujemy się w produkcji skomplikowanych i precyzyjnych konstrukcji stalowych oraz obróbce metali na terenie Śląska. Nasza wiedza i doświadczenie obsługują czołowych producentów w branży elektroenergetycznej, motoryzacyjnej i maszynowej. Z tradycją sięgającą 1994 roku, rozpoczętą przez P.P.H.U. METANA i P.P.H.U. METANA S.C., jesteśmy solidną obecnością zarówno na rynku krajowym, jak i międzynarodowym."
+    },
+    "faq": {
+        "srLabel": "Kliknij, aby zobaczyć odpowiedź",
+        "first": {
+            "question": "Czy prowadzicie rekrutacje?",
+            "answer": "Tak, aktywnie poszukujemy kwalifikowanych osób dołączających do naszego zespołu jako programiści i operatorzy CNC, operatorzy tokarek manualnych oraz pracownicy produkcji. Jeśli posiadasz umiejętności i doświadczenie w którymkolwiek z tych obszarów, zachęcamy do zapoznania się z dostępnymi możliwościami na naszej stronie z ofertami pracy i złożenia swojej aplikacji. Mamy nadzieję, że niedługo będziemy mogli powitać Cię w naszej firmie."
+        },
+        "second": {
+            "question": "Jakie maszyny używamy?",
+            "answer": ""
+        },
+        "third": {
+            "question": "Z jakimi materiałami zazwyczaj pracujemy?",
+            "answer": ""
+        }
+    },
+    "contact": {
+        "office": {
+            "title": "Biuro",
+            "mail": "biuro",
+            "secondMail": "zamowienie"
+        },
+        "ceo": {
+            "name": "Anna Kruszona",
+            "title": "Prezes",
+            "number": "+48 503 050 856",
+            "numberLink": "+48503050856",
+            "mail": "anna.kruszona"
+        },
+        "cto": {
+            "name": "Kamil Kruszona",
+            "title": "CTO",
+            "number": "+48 503 932 347",
+            "numberLink": "+48503932347",
+            "mail": "kamil.kruszona"
+        }
+    },
+    "mail": "metana.net",
+    "footer": {
+        "copyright": "Prawo autorskie",
+        "reserved": ", Wszelkie prawa zastrzeżone"
+    }
+}

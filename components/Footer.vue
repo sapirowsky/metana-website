@@ -11,8 +11,9 @@ let copyrightYearText = currentYear === 2023 ? 2023 : `2023 - ${currentYear}`
       <div class="flex items-center gap-2">
         <NuxtImg src="/logo.png" class="h-7" alt="Logo of Metana" />
         <p class="text-sm">
-          Copyright © <span id="year">{{ copyrightYearText }}</span
-          >, All right reserved
+          {{ $t("footer.copyright") }}
+          © <span id="year">{{ copyrightYearText }}</span>
+          {{ $t("footer.reserved") }}
         </p>
       </div>
       <div class="tooltip tooltip-top" data-tip="Desgin & development">

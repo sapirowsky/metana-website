@@ -19,13 +19,17 @@ export default defineNuxtConfig({
       {
         code: "pl",
         name: "Polski",
+        file: "pl.json",
       },
       {
         code: "en",
         name: "English",
+        file: "en.json",
       },
     ],
+    lazy: true,
     defaultLocale: "pl",
+    langDir: "lang",
     strategy: "prefix_except_default",
   },
   tailwindcss: {

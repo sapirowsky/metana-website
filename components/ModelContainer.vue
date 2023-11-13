@@ -16,6 +16,7 @@ const { hasFinishLoading, progress } = await useProgress()
       <progress class="progress w-1/2" :value="progress" max="100"></progress>
     </div>
   </Transition>
+
   <TresCanvas clear-color="#0071bc">
     <TresPerspectiveCamera :position="[40, 50, 50]" :look-at="0" />
     <OrbitControls :enable-zoom="false" :auto-rotate="true" />

@@ -45,20 +45,15 @@ onMounted(() => {
           quality="100"
           class="h-auto w-3/4 rounded-lg"
           src="/iso.png"
-          alt="ISO Certfificates"
+          :alt="$t('about.imgAlt')"
         />
       </div>
       <div class="w-full md:w-1/2">
         <h1 class="text-4xl md:text-6xl font-bold text-hidden">
-          Welcome to Metana
+          {{ $t("about.heading") }}
         </h1>
         <p class="text-xl md:text-2xl pl-4 text-hidden">
-          We specialize in the production of intricate and precise steel
-          constructions, as well as metal processing in the Silesian region. Our
-          expertise serves leading manufacturers in the electro-energy,
-          automotive, and machinery industries. With a legacy dating back to
-          1994, started by P.P.H.U. METANA and P.P.H.U. METANA S.C. We have been
-          a reliable presence in both national and international markets.
+          {{ $t("about.paragraph") }}
         </p>
       </div>
     </div>

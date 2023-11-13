@@ -20,23 +20,20 @@ onMounted(() => {
       <div
         class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-30 hide-question show-question"
       >
-        <label for="first" class="sr-only">Click to see answer</label>
+        <label for="first" class="sr-only">{{ $t("faq.srLabel") }}</label>
         <input
           id="first"
           type="radio"
           name="my-accordion-2"
           checked="checked"
         />
-        <div class="collapse-title text-xl font-medium">Are you hiring?</div>
+        <div class="collapse-title text-xl font-medium">
+          {{ $t("faq.first.question") }}
+        </div>
         <div class="collapse-content">
           <div class="w-full">
             <p>
-              Yes, we are actively looking for qualified individuals to join our
-              team as CNC programmers & operators, manual lathe operators, and
-              production workers. If you have the skills and experience for any
-              of these positions, we encourage you to explore the opportunities
-              available on our career page and submit your application. We look
-              forward to potentially welcoming you to our company.
+              {{ $t("faq.first.answer") }}
             </p>
           </div>
         </div>
@@ -44,10 +41,10 @@ onMounted(() => {
       <div
         class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-20 hide-question show-question"
       >
-        <label for="second" class="sr-only">Click to see answer</label>
+        <label for="second" class="sr-only">{{ $t("faq.srLabel") }}</label>
         <input id="second" type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          What machines do we use?
+          {{ $t("faq.second.question") }}
         </div>
         <div class="collapse-content">
           <TransitionGroup
@@ -60,13 +57,13 @@ onMounted(() => {
       <div
         class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-10 hide-question show-question"
       >
-        <label for="third" class="sr-only">Click to see answer</label>
+        <label for="third" class="sr-only">{{ $t("faq.srLabel") }}</label>
         <input id="third" type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">
-          Which materials do we usually work with?
+          {{ $t("faq.third.question") }}
         </div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p></p>
         </div>
       </div>
     </div>

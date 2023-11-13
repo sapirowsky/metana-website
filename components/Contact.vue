@@ -22,34 +22,52 @@ onMounted(() => {
       <div class="w-full md:w-1/2 p-4 flex flex-col justify-around gap-4">
         <div class="w-full rounded-md bg-gray-300 dark:bg-gray-800 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
-            <p class="text-gray-500">Office</p>
+            <p class="text-gray-500">
+              {{ $t("contact.office.title") }}
+            </p>
             <div class="flex flex-col gap-2">
-              <p>office@metana.net</p>
-              <p>order@metana.net</p>
+              <p>{{ $t("contact.office.mail") }}@{{ $t("mail") }}</p>
+              <p>{{ $t("contact.office.secondMail") }}@{{ $t("mail") }}</p>
             </div>
           </div>
         </div>
         <div class="w-full rounded-md bg-gray-300 dark:bg-gray-800 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
-              <h2>Anna Kruszona</h2>
-              <p class="text-gray-500">CEO/Owner</p>
+              <h2>
+                {{ $t("contact.ceo.name") }}
+              </h2>
+              <p class="text-gray-500">
+                {{ $t("contact.ceo.title") }}
+              </p>
             </div>
             <div class="flex flex-col gap-1">
-              <p>+48 503 050 856</p>
-              <p>anna.kruszona@metana.net</p>
+              <a :href="'tel:' + $t('contact.ceo.numberLink')">
+                {{ $t("contact.ceo.number") }}
+              </a>
+              <a :href="'mailto:' + $t('contact.ceo.mail') + '@' + $t('mail')">
+                {{ $t("contact.ceo.mail") }}@{{ $t("mail") }}
+              </a>
             </div>
           </div>
         </div>
         <div class="w-full rounded-md bg-gray-300 dark:bg-gray-800 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
-              <h2>Kamil Kruszona</h2>
-              <p class="text-gray-500">CIO</p>
+              <h2>
+                {{ $t("contact.cto.name") }}
+              </h2>
+              <p class="text-gray-500">
+                {{ $t("contact.cto.title") }}
+              </p>
             </div>
             <div class="flex flex-col gap-1">
-              <p>+48 503 932 347</p>
-              <p>kamil.kruszona@metana.net</p>
+              <a :href="'tel:' + $t('contact.cto.numberLink')">
+                {{ $t("contact.cto.number") }}
+              </a>
+              <a :href="'mailto:' + $t('contact.cto.mail') + '@' + $t('mail')">
+                {{ $t("contact.cto.mail") }}@{{ $t("mail") }}
+              </a>
             </div>
           </div>
         </div>

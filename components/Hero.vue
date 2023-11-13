@@ -10,29 +10,30 @@
       >
         <div class="flex flex-col justify-center gap-2 md:flex-[2]">
           <h1 class="text-4xl md:text-6xl font-bold">
-            Welding. Machining. Milling.
+            {{ $t("hero.heading") }}
           </h1>
           <div class="flex items-center gap-4">
             <div class="w-4 border rounded border-gray-500"></div>
-            <p class="text-lg md:text-xl text-[#0099ff]">What we Do</p>
+            <p class="text-lg md:text-xl text-[#0099ff]">
+              {{ $t("hero.question") }}
+            </p>
           </div>
           <p class="text-xl md:text-2xl">
-            we specialize in making precise steel parts, as well as metal
-            processing in Poland.
+            {{ $t("hero.answer") }}
           </p>
           <div class="flex gap-2 mt-2">
             <a href="#about-us">
               <button
                 class="btn bg-[#0071bc] text-white hover:bg-[#0062a3] border-[#0071bc] hover:border-[#0062a3] hover:text-gray-200"
               >
-                Learn more
+                {{ $t("hero.learnMore") }}
               </button>
             </a>
             <a href="#contact">
               <button
                 class="btn btn-outline border border-[#0071bc] text-[#0071bc] hover:bg-[#0071bc] hover:text-white hover:border-[#005289]"
               >
-                Contact us!
+                {{ $t("hero.contact") }}
               </button>
             </a>
           </div>
@@ -43,7 +44,7 @@
           <div
             class="bg-[#0071bc] border w-5/6 h-5/6 custom-bg-border overflow-hidden"
           >
-            <ModelContainer />
+            <LazyModelContainer />
           </div>
         </div>
       </div>

@@ -17,19 +17,25 @@ const switchLocalePath = useSwitchLocalePath()
         tabindex="0"
         class="dropdown-content z-[1] menu p-2 shadow bg-gray-300 dark:bg-gray-800 rounded-box w-max"
       >
-        <li v-for="lan in locales" :key="lan.code">
-          <NuxtLink>
+        <li v-for="{ code, name } in locales" :key="code">
+          <NuxtLink
+            :to="switchLocalePath(code)"
+            :class="{
+              'bg-gray-400 dark:bg-gray-900': code === locale,
+            }"
+            :external="true"
+          >
             <span
               class="badge badge-sm badge-outline font-mono font-bold tracking-widest opacity-50"
             >
-              {{ lan.code }}
+              {{ code }}
             </span>
-            <p>{{ lan.name }}</p>
+            <p>{{ name }}</p>
           </NuxtLink>
         </li>
       </ul>
     </div>
-    <div class="tooltip tooltip-left" data-tip="Change theme">
+    <div class="tooltip tooltip-left" :data-tip="$t('controls.changeTheme')">
       <button
         class="h-8 w-8 md:h-10 md:w-10 rounded-full cursor-pointer grid place-content-center relative p-[auto]"
         @click="
@@ -56,7 +62,7 @@ const switchLocalePath = useSwitchLocalePath()
             v-if="colorMode.preference === 'system'"
           />
         </Transition>
-        <p class="sr-only">Change Theme</p>
+        <p class="sr-only">{{ $t("controls.changeTheme") }}</p>
       </button>
     </div>
   </div>
