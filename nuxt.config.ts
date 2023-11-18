@@ -48,4 +48,4 @@ export default defineNuxtConfig({
     quality: 96,
   },
   ui: {},
-})
+});

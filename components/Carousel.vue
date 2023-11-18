@@ -1,0 +1,62 @@
+<script setup>
+const list = [
+  {
+    img: "./panasonic.png",
+    title: "Welding robot",
+    desc: "We are using Panasonic welding robot to enhance and make our work faster.",
+  },
+  {
+    img: "https://images.unsplash.com/photo-1605661538864-acf18427564c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    title: "Car, woman, passion hihi",
+    desc: "Yea very cool photo i know",
+  },
+];
+const currentItem = ref(0);
+const changeSlide = (slide) => {
+  if (slide < 0) {
+    currentItem.value = list.length - 1;
+    return;
+  }
+  if (slide >= list.length) {
+    currentItem.value = 0;
+    return;
+  }
+
+  currentItem.value = slide;
+};
+</script>
+<template>
+  <ul class="relative w-full h-full">
+    <li
+      @click="changeSlide(currentItem - 1)"
+      class="absolute top-1/2 -translate-y-1/2 h-max -left-4"
+    >
+      Prev
+    </li>
+    <li
+      v-for="(item, index) in list"
+      :key="index"
+      class="flex gap-2 transition-transform"
+      :class="
+        currentItem === index
+          ? 'visible translate-x-0'
+          : 'invisible w-0 h-0 translate-x-20'
+      "
+    >
+      <div class="w-1/2 grid place-content-center">
+        <NuxtImg class="max-w-full max-h-60" :src="item.img" />
+      </div>
+      <div class="w-1/2">
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.desc }}</p>
+      </div>
+    </li>
+    <li
+      @click="changeSlide(currentItem + 1)"
+      class="absolute top-1/2 -translate-y-1/2 h-max -right-4"
+    >
+      Next
+    </li>
+  </ul>
+</template>
+<style></style>
