@@ -14,7 +14,7 @@ const list = [
     desc: t("faq.second.answer.second.about"),
   },
   {
-    img: "./panasonic.png",
+    img: "./brother.png",
     alt: t("faq.second.answer.third.title"),
     title: t("faq.second.answer.third.title"),
     desc: t("faq.second.answer.third.about"),
@@ -23,7 +23,7 @@ const list = [
     img: "./kovosvit-mas.png",
     alt: t("faq.second.answer.fourth.title"),
     title: t("faq.second.answer.fourth.title"),
-    desc: t("faq.second.answer.third.about"),
+    desc: t("faq.second.answer.fourth.about"),
   },
 ]
 const directionBinded = ref("5rem")
