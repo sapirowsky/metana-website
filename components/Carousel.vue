@@ -63,7 +63,7 @@ const changeSlide = async (slide, direction) => {
       "
     >
       <div class="w-full md:w-1/2 grid place-content-center">
-        <NuxtImg class="max-w-full max-h-80" :src="item.img" />
+        <NuxtImg class="max-w-full max-h-80" :src="item.img" :alt="item.alt" />
       </div>
       <div class="w-full md:w-1/2 flex flex-col gap-4">
         <h2 class="text-2xl font-bold">{{ item.title }}</h2>
