@@ -47,7 +47,9 @@ const changeSlide = async (slide, direction) => {
 </script>
 <template>
   <ul class="relative w-full h-full">
-    <span class="absolute top-1/2 -translate-y-1/2 h-max -left-5 z-20">
+    <span
+      class="absolute top-1/2 -translate-y-1/2 h-max -left-8 md:-left-5 z-20"
+    >
       <button class="btn p-2" @click="changeSlide(currentItem - 1, '-5rem')">
         <UiArrowBack />
       </button>
@@ -55,7 +57,7 @@ const changeSlide = async (slide, direction) => {
     <li
       v-for="(item, index) in list"
       :key="index"
-      class="flex flex-col md:flex-row gap-2 transition-transform pr-10"
+      class="flex flex-col md:flex-row gap-2 transition-transform pl-6 md:pl-0 pr-6 md:pr-10"
       :class="
         currentItem === index
           ? 'visible translate-x-0'
@@ -70,7 +72,9 @@ const changeSlide = async (slide, direction) => {
         <p>{{ item.desc }}</p>
       </div>
     </li>
-    <span class="absolute top-1/2 -translate-y-1/2 h-max -right-5 z-20">
+    <span
+      class="absolute top-1/2 -translate-y-1/2 h-max -right-8 md:-right-5 z-20"
+    >
       <button class="btn p-2" @click="changeSlide(currentItem + 1, '5rem')">
         <UiArrowForward />
       </button>
