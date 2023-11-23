@@ -23,11 +23,28 @@
         "srLabel": "Click to see answer",
         "first": {
             "question": "Are you hiring?",
-            "answer": " Yes, we are actively looking for qualified individuals to join our team as CNC programmers & operators, manual lathe operators, and production workers. If you have the skills and experience for any of these positions, we encourage you to explore the opportunities available on our career page and submit your application. We look forward to potentially welcoming you to our company."
+            "answer": " Yes, we are actively looking for qualified individuals to join our team as manual lathe operators, and locksmiths. If you have the skills and experience for any of these positions, we encourage you to explore the opportunities available on our career page and submit your application. We look forward to potentially welcoming you to our company."
         },
         "second": {
             "question": "What machines do we use?",
-            "answer": ""
+            "answer": {
+                "first": {
+                    "title": "Panasonic Welding robot",
+                    "about": "Panasonic welding robots are at the forefront of cutting-edge technology for efficient and precise welding. With high-speed, high-precision motion control, these robots ensure accurate and consistent results in various applications. The user-friendly interfaces, integration with advanced welding power sources, and real-time monitoring through sensors and vision systems make Panasonic welding robots a reliable choice. Elevating our company productivity and welding quality with Panasonic's innovative robotic solutions."
+                },
+                "second": {
+                    "title": "Mazak Lathe",
+                    "about": "The Mazak Quick Turn 100M is a high-performance CNC turning center that combines speed and precision for optimal machining. This machine is equipped with advanced features, including a powerful spindle and smooth turret movement, ensuring efficient and accurate turning operations. Its user-friendly control interface allows for easy programming and operation. The Quick Turn 100M is designed to handle a variety of materials and deliver consistent results, making it a versatile and reliable solution for your machining needs. We have upgraded our manufacturing capabilities with Mazak's Quick Turn 100M for enhanced efficiency and precision."
+                },
+                "third": {
+                    "title": "Brother Milling machine",
+                    "about": "The Brother SPEEDIO S700X1 is a compact and high-speed machining center designed for versatility and efficiency. With a rapid tool change and fast acceleration/deceleration rates, it excels in quick and precise machining operations. The machine features a user-friendly control interface, making programming and operation straightforward. The S700X1 is equipped with advanced technologies for improved productivity, including high-speed spindle rotation and efficient chip evacuation. Whether we're dealing with intricate parts or high-volume production, the Brother SPEEDIO S700X1 provides a reliable solution for our machining needs, ensuring speed and precision in every operation."
+                },
+                "fourth": {
+                    "title": "Kovosvit Lathe",
+                    "about": "The Kovosvit MAS SP 180 is a robust and versatile CNC lathe designed for precision machining. With a sturdy construction and a powerful motor, it handles various turning tasks with ease. The SP 180 features a user-friendly interface for convenient operation and efficient workflow. Its precision controls and adjustable settings provide flexibility for different machining requirements."
+                }
+            }
         },
         "third": {
             "question": "Which materials do we usually work with?",

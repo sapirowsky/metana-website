@@ -3,16 +3,16 @@ onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show-question");
+        entry.target.classList.add("show-question")
       } else {
-        entry.target.classList.remove("show-question");
+        entry.target.classList.remove("show-question")
       }
-    });
-  });
+    })
+  })
 
   // const hiddenElements = document.querySelectorAll(".hide-question")
   // hiddenElements.forEach((el) => observer.observe(el))
-});
+})
 </script>
 <template>
   <div id="faq" class="h-max grid place-items-center">
@@ -50,7 +50,7 @@ onMounted(() => {
           <Carousel />
         </div>
       </div>
-      <div
+      <!-- <div
         class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-10 hide-question show-question"
       >
         <label for="third" class="sr-only">{{ $t("faq.srLabel") }}</label>
@@ -61,7 +61,7 @@ onMounted(() => {
         <div class="collapse-content">
           <p></p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

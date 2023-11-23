@@ -1,24 +1,29 @@
 <script setup>
+const { t } = useI18n()
 const list = [
   {
     img: "./panasonic.png",
-    title: "Welding robot",
-    desc: "We are using Panasonic welding robot to enhance and make our work faster.",
+    alt: t("faq.second.answer.first.title"),
+    title: t("faq.second.answer.first.title"),
+    desc: t("faq.second.answer.first.about"),
   },
   {
-    img: "https://images.unsplash.com/photo-1605661538864-acf18427564c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Car, woman, passion hihi",
-    desc: "Yea very cool photo i know",
+    img: "./mazak.png",
+    alt: t("faq.second.answer.second.title"),
+    title: t("faq.second.answer.second.title"),
+    desc: t("faq.second.answer.second.about"),
   },
   {
     img: "./panasonic.png",
-    title: "Welding robot",
-    desc: "We are using Panasonic welding robot to enhance and make our work faster.",
+    alt: t("faq.second.answer.third.title"),
+    title: t("faq.second.answer.third.title"),
+    desc: t("faq.second.answer.third.about"),
   },
   {
-    img: "https://images.unsplash.com/photo-1605661538864-acf18427564c?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Car, woman, passion hihi",
-    desc: "Yea very cool photo i know",
+    img: "./kovosvit-mas.png",
+    alt: t("faq.second.answer.fourth.title"),
+    title: t("faq.second.answer.fourth.title"),
+    desc: t("faq.second.answer.third.about"),
   },
 ]
 const directionBinded = ref("5rem")
@@ -42,37 +47,34 @@ const changeSlide = async (slide, direction) => {
 </script>
 <template>
   <ul class="relative w-full h-full">
-    <li
-      @click="changeSlide(currentItem - 1, '-5rem')"
-      class="absolute top-1/2 -translate-y-1/2 h-max -left-4 z-20"
-    >
-      Prev
-    </li>
+    <span class="absolute top-1/2 -translate-y-1/2 h-max -left-5 z-20">
+      <button class="btn p-2" @click="changeSlide(currentItem - 1, '-5rem')">
+        <UiArrowBack />
+      </button>
+    </span>
     <li
       v-for="(item, index) in list"
       :key="index"
-      class="flex gap-2 transition-transform"
+      class="flex flex-col md:flex-row gap-2 transition-transform pr-10"
       :class="
         currentItem === index
           ? 'visible translate-x-0'
           : 'carousel-invisible-card'
       "
     >
-      <div class="w-1/2 grid place-content-center">
+      <div class="w-full md:w-1/2 grid place-content-center">
         <NuxtImg class="max-w-full max-h-80" :src="item.img" />
       </div>
-      <div class="w-1/2">
-        <h2>{{ item.title }}</h2>
+      <div class="w-full md:w-1/2 flex flex-col gap-4">
+        <h2 class="text-2xl font-bold">{{ item.title }}</h2>
         <p>{{ item.desc }}</p>
-        {{ index }}
       </div>
     </li>
-    <li
-      @click="changeSlide(currentItem + 1, '5rem')"
-      class="absolute top-1/2 -translate-y-1/2 h-max -right-4 z-20"
-    >
-      Next
-    </li>
+    <span class="absolute top-1/2 -translate-y-1/2 h-max -right-5 z-20">
+      <button class="btn p-2" @click="changeSlide(currentItem + 1, '5rem')">
+        <UiArrowForward />
+      </button>
+    </span>
   </ul>
 </template>
 <style>
