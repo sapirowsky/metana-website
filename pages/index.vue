@@ -55,6 +55,7 @@ useHead({
     <Hero />
     <About />
     <Faq />
+    <Machines />
     <Contact />
   </main>
   <Footer />
