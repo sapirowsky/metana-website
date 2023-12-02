@@ -17,21 +17,22 @@ const { hasFinishLoading, progress } = await useProgress()
     </div>
   </Transition>
 
-  <TresCanvas clear-color="#0071bc">
+  <TresCanvas :alpha="true">
     <TresPerspectiveCamera :position="[40, 50, 50]" :look-at="0" />
-    <OrbitControls :enable-zoom="false" :auto-rotate="true" />
+    <OrbitControls
+      :enable-zoom="false"
+      :enable-pan="false"
+      :enable-rotate="true"
+    />
 
     <Suspense>
       <TresMesh>
         <Part />
       </TresMesh>
     </Suspense>
-
     <TresDirectionalLight :position="[0, 1, 0]" :intensity="1" />
     <TresDirectionalLight :position="[0, -1, 0]" :intensity="1" />
     <TresDirectionalLight :position="[-1, 0, 0]" :intensity="1" />
     <TresDirectionalLight :position="[1, 0, 0]" :intensity="1" />
-    <TresDirectionalLight :position="[0, 0, 1]" :intensity="1" />
-    <TresDirectionalLight :position="[0, 0, -1]" :intensity="1" />
   </TresCanvas>
 </template>

@@ -34,6 +34,7 @@ export default defineNuxtConfig({
   },
   tailwindcss: {
     cssPath: "~/assets/css/tailwind.css",
+    configPath: "~/tailwind.config.js",
   },
   colorMode: {
     classSuffix: "",
@@ -48,4 +49,4 @@ export default defineNuxtConfig({
     quality: 96,
   },
   ui: {},
-});
+})

@@ -37,9 +37,6 @@ useHead({
     },
   ],
 })
-
-const languages = ["Polski", "English", "Spanish"]
-const selected = ref(languages[0])
 </script>
 <template>
   <header class="flex justify-center">
