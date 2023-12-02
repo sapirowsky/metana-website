@@ -2,6 +2,7 @@
 defineI18nRoute({
   locales: ["pl", "en"],
 })
+const localePath = useLocalePath()
 
 useSeoMeta({
   description:
@@ -41,7 +42,9 @@ useHead({
 <template>
   <header class="flex justify-center">
     <div class="container px-6 py-2 flex justify-between items-center">
-      <NuxtImg src="/logo.png" class="h-10 md:h-12" alt="Logo of Metana" />
+      <NuxtLink :to="localePath('/')" class="text-4xl text-[#0071BC] logo"
+        >Metana</NuxtLink
+      >
       <div class="flex justify-center items-center gap-6">
         <Navigation />
         <Controls />
@@ -50,9 +53,15 @@ useHead({
   </header>
   <main>
     <Hero />
-    <LazyAbout />
-    <LazyFaq />
-    <LazyContact />
+    <About />
+    <Faq />
+    <Contact />
   </main>
-  <LazyFooter />
+  <Footer />
 </template>
+<style>
+.logo {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
+</style>
