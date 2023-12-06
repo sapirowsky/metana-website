@@ -16,7 +16,7 @@ let copyrightYearText = currentYear === 2023 ? 2023 : `2023 - ${currentYear}`
           {{ $t("footer.reserved") }}
         </p>
       </div>
-      <div class="tooltip tooltip-top" data-tip="Desgin & development">
+      <!-- <div class="tooltip tooltip-top" data-tip="Desgin & development">
         <NuxtLink
           class="text-sm flex items-center text-gray-500"
           to="https://kamilkruszona.dev/"
@@ -24,7 +24,7 @@ let copyrightYearText = currentYear === 2023 ? 2023 : `2023 - ${currentYear}`
         >
           {{ creator }}
         </NuxtLink>
-      </div>
+      </div> -->
     </div>
   </footer>
 </template>

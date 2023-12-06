@@ -14,7 +14,7 @@
           </h1>
           <div class="flex items-center gap-4">
             <div class="w-4 border rounded border-gray-500"></div>
-            <p class="text-lg md:text-xl text-[#0099ff]">
+            <p class="text-lg md:text-2xl text-[#0099ff] italic">
               {{ $t("hero.question") }}
             </p>
           </div>

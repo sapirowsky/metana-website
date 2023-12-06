@@ -28,3 +28,7 @@ body {
   position: relative;
   overflow-x: hidden;
 }
+.font-caveat-600 {
+  font-family: "Caveat", cursive;
+  font-weight: 600;
+}
