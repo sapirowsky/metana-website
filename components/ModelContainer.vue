@@ -34,5 +34,7 @@ const { hasFinishLoading, progress } = await useProgress()
     <TresDirectionalLight :position="[0, -1, 0]" :intensity="1" />
     <TresDirectionalLight :position="[-1, 0, 0]" :intensity="1" />
     <TresDirectionalLight :position="[1, 0, 0]" :intensity="1" />
+    <TresDirectionalLight :position="[0, 0, 1]" :intensity="1" />
+    <TresDirectionalLight :position="[0, 0, -1]" :intensity="1" />
   </TresCanvas>
 </template>
