@@ -1,8 +1,20 @@
 {
+    "meta": {
+        "description": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
+        "ogTitle": "Metana",
+        "ogDescription": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
+        "ogImage": "http://metana.net/logo.png",
+        "ogUrl": "https://www.metana.net/",
+        "twitterTitle": "Metana",
+        "twitterDescription": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
+        "twitterImage": "http://metana.net/logo.png",
+        "twitterCard": "Jeżeli potrzebujesz skomplikowanych detali, wykonanych z najwyższą precyzją to skontaktuj się z nami."
+    },
     "navigation": {
         "about": "O nas",
         "faq": "FAQ",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "machines": "Maszyny"
     },
     "controls": {
         "changeTheme": "Zmień Motyw"
@@ -51,6 +63,25 @@
             "answer": ""
         }
     },
+    "machines": {
+        "title": "Innowacyjne rozwiązania technologiczne",
+        "first": {
+            "title": "Robot Spawalniczy Panasonic",
+            "photo": "/panasonic.png"
+        },
+        "second": {
+            "title": "Tokarka Mazak",
+            "photo": "/mazak.png"
+        },
+        "third": {
+            "title": "Frezarka Brother",
+            "photo": "/brother.png"
+        },
+        "fourth": {
+            "title": "Tokarka Kovosvit",
+            "photo": "/kovosvit-mas.png"
+        }
+    },
     "contact": {
         "office": {
             "title": "Biuro",
@@ -59,7 +90,7 @@
         },
         "ceo": {
             "name": "Anna Kruszona",
-            "title": "Prezes",
+            "title": "CEO",
             "number": "+48 503 050 856",
             "numberLink": "+48503050856",
             "mail": "anna.kruszona"

@@ -3,21 +3,18 @@ defineI18nRoute({
   locales: ["pl", "en"],
 })
 const localePath = useLocalePath()
+const { t } = useI18n()
 
 useSeoMeta({
-  description:
-    "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
-  ogTitle: "Metana",
-  ogDescription:
-    "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
-  ogImage: "",
-  ogUrl: "https://www.metana.net/",
-  twitterTitle: "Metana",
-  twitterDescription:
-    "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
-  twitterImage: "http://localhost:3000/logo.png",
-  twitterCard:
-    "Jeżeli potrzebujesz skomplikowanych detali, wykonanych z najwyższą precyzją to skontaktuj się z nami.",
+  description: t("meta.description"),
+  ogTitle: t("meta.ogTitle"),
+  ogDescription: t("meta.ogDescription"),
+  ogImage: t("meta.ogImage"),
+  ogUrl: t("meta.ogUrl"),
+  twitterTitle: t("meta.twitterTitle"),
+  twitterDescription: t("meta.twitterDescription"),
+  twitterImage: t("meta.twitterImage"),
+  twitterCard: t("meta.twitterCard"),
 })
 
 useHead({

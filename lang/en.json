@@ -1,8 +1,20 @@
 {
+    "meta": {
+        "description": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
+        "ogTitle": "Metana",
+        "ogDescription": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
+        "ogImage": "http://metana.net/logo.png",
+        "ogUrl": "https://www.metana.net/",
+        "twitterTitle": "Metana",
+        "twitterDescription": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
+        "twitterImage": "http://metana.net/logo.png",
+        "twitterCard": "If you need complex details, made with the highest precision, contact us."
+    },
     "navigation": {
         "about": "About Us",
         "faq": "FAQ",
-        "contact": "Contact"
+        "contact": "Contact",
+        "machines": "Machines"
     },
     "controls": {
         "changeTheme": "Change Theme"
@@ -51,6 +63,25 @@
             "answer": ""
         }
     },
+    "machines": {
+        "title": "Innovative technological solutions",
+        "first": {
+            "title": "Panasonic Welding robot",
+            "photo": "/panasonic.png"
+        },
+        "second": {
+            "title": "Mazak Lathe",
+            "photo": "/mazak.png"
+        },
+        "third": {
+            "title": "Brother Milling machine",
+            "photo": "/brother.png"
+        },
+        "fourth": {
+            "title": "Kovosvit Lathe",
+            "photo": "/kovosvit-mas.png"
+        }
+    },
     "contact": {
         "office": {
             "title": "Office",
@@ -59,7 +90,7 @@
         },
         "ceo": {
             "name": "Anna Kruszona",
-            "title": "CEO/Owner",
+            "title": "CEO",
             "number": "+48 503 050 856",
             "numberLink": "+48503050856",
             "mail": "anna.kruszona"

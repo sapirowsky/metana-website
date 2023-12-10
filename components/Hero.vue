@@ -41,7 +41,9 @@
         <div
           class="w-3/4 aspect-square md:flex-[2] relative flex items-center justify-center"
         >
-          <div class="w-5/6 h-5/6 overflow-hidden">
+          <div
+            class="bg-[#0071bc] w-5/6 h-5/6 custom-bg-border overflow-hidden"
+          >
             <LazyModelContainer />
           </div>
         </div>
