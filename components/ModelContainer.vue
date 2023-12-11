@@ -11,7 +11,7 @@ const { hasFinishLoading, progress } = await useProgress()
   >
     <div
       v-show="!hasFinishLoading"
-      class="absolute inset-0 w-full h-full z-20 flex justify-center items-center text-black font-mono"
+      class="absolute inset-0 w-full h-full flex justify-center items-center text-black font-mono"
     >
       <progress class="progress w-1/2" :value="progress" max="100"></progress>
     </div>

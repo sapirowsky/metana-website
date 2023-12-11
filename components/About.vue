@@ -35,11 +35,11 @@ onMounted(() => {
           :alt="$t('about.imgAlt')"
         />
       </div>
-      <div class="w-full md:w-1/2">
+      <div class="w-full md:w-1/2 flex flex-col gap-4 lg:gap-8">
         <h1 class="text-4xl md:text-6xl font-bold">
           {{ $t("about.heading") }}
         </h1>
-        <p class="text-xl md:text-2xl pl-4">
+        <p class="text-xl md:text-2xl">
           {{ $t("about.paragraph") }}
         </p>
       </div>
