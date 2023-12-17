@@ -1,5 +1,5 @@
 <script setup>
-const { scene } = await useGLTF("/atestv2.glb", { draco: true })
+const { scene } = await useGLTF("/em047.glb", { draco: true })
 const { onLoop } = useRenderLoop()
 const animationRef = shallowRef()
 onLoop(({ delta }) => {
