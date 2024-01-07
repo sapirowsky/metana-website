@@ -23,6 +23,12 @@
   src: url("~/assets/fonts/Caveat-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Researcher-squid";
+  font-weight: 700;
+  src: url("~/assets/fonts/researcher-researcher-squid-700.ttf");
+}
+
 html,
 body {
   position: relative;
@@ -31,4 +37,8 @@ body {
 .font-caveat-600 {
   font-family: "Caveat", cursive;
   font-weight: 600;
+}
+.font-researcher-squid {
+  font-family: "Researcher-squid";
+  font-weight: 700;
 }

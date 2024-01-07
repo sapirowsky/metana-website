@@ -41,7 +41,7 @@ useHead({
     <div class="container px-6 py-2 flex justify-between items-center">
       <NuxtLink
         :to="localePath('/')"
-        class="text-4xl text-[#0071BC] font-caveat-600"
+        class="text-3xl text-[#0071BC] font-researcher-squid"
         >Metana</NuxtLink
       >
       <div class="flex justify-center items-center gap-6">

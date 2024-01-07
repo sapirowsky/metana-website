@@ -21,13 +21,26 @@ onMounted(() => {
     >
       <div class="w-full md:w-1/2 p-4 flex flex-col justify-around gap-4">
         <div class="w-full rounded-md bg-gray-300 dark:bg-gray-800 hide">
-          <div class="flex flex-col px-4 py-2 gap-4">
-            <p class="text-gray-500">
-              {{ $t("contact.office.title") }}
-            </p>
-            <div class="flex flex-col gap-2">
-              <p>{{ $t("contact.office.mail") }}@{{ $t("mail") }}</p>
-              <p>{{ $t("contact.office.secondMail") }}@{{ $t("mail") }}</p>
+          <div class="flex justify-between">
+            <div class="flex flex-col px-4 py-2 gap-3">
+              <p class="text-gray-500">
+                {{ $t("contact.office.title") }}
+              </p>
+              <div>
+                <p>Metana Sp. z o.o. Sp. K.</p>
+                <p>Młyńska 1</p>
+                <p>42-690 Tworóg</p>
+              </div>
+              <div>
+                <a
+                  :href="
+                    'mailto:' + $t('contact.office.mail') + '@' + $t('mail')
+                  "
+                >
+                  {{ $t("contact.office.mail") }}@{{ $t("mail") }}
+                </a>
+                <p>NIP: 5482500613</p>
+              </div>
             </div>
           </div>
         </div>
