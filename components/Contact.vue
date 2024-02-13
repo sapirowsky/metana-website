@@ -20,7 +20,7 @@ onMounted(() => {
       class="container px-6 py-4 flex flex-col gap-4 md:gap-0 md:flex-row h-full"
     >
       <div class="w-full md:w-1/2 p-4 flex flex-col justify-around gap-4">
-        <div class="w-full rounded-md bg-gray-3 00 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
           <div class="flex justify-between">
             <div class="flex flex-col px-4 py-2 gap-3">
               <p class="text-gray-500">
@@ -44,7 +44,7 @@ onMounted(() => {
             </div>
           </div>
         </div>
-        <div class="w-full rounded-md bg-gray-3 00 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
               <h2>
@@ -64,7 +64,7 @@ onMounted(() => {
             </div>
           </div>
         </div>
-        <div class="w-full rounded-md bg-gray-3 00 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
               <h2>
