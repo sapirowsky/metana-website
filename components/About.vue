@@ -36,8 +36,8 @@ onMounted(() => {
         />
       </div>
       <div class="w-full md:w-1/2 flex flex-col gap-4 lg:gap-8">
-        <p class="text-xl md:text-2xl font-sans">
-          <span class="text-4xl md:text-6xl font-bold font-mono">
+        <p class="text-xl md:text-2xl">
+          <span class="text-4xl md:text-6xl font-bold">
             {{ $t("about.heading") }}
           </span>
           {{ $t("about.paragraph") }}

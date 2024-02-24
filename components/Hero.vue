@@ -9,7 +9,7 @@
         class="w-full h-full flex flex-col-reverse md:flex-row gap-6 md:gap-0 items-center justify-center md:mt-0"
       >
         <div class="flex flex-col justify-center gap-2 md:flex-[2]">
-          <h1 class="text-4xl md:text-6xl font-bold">
+          <h1 class="text-4xl md:text-5xl font-bold">
             {{ $t("hero.heading") }}
           </h1>
           <div class="flex items-center gap-4">

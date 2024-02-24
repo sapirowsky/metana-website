@@ -28,11 +28,19 @@
   font-weight: 700;
   src: url("~/assets/fonts/researcher-researcher-squid-700.ttf");
 }
+@font-face {
+  font-family: "Inter-regular";
+  font-weight: 400;
+  src: url("~/assets/fonts/Inter-Regular.ttf");
+}
 
 html,
 body {
   position: relative;
   overflow-x: hidden;
+}
+body {
+  font-family: "Inter-Regular";
 }
 .font-caveat-600 {
   font-family: "Caveat", cursive;
