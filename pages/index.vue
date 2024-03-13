@@ -53,7 +53,6 @@ useHead({
   <main>
     <Hero />
     <About />
-    <!-- <Faq /> -->
     <Machines />
     <Contact />
   </main>

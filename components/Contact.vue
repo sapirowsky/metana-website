@@ -20,10 +20,10 @@ onMounted(() => {
       class="container px-6 py-4 flex flex-col gap-4 md:gap-0 md:flex-row h-full"
     >
       <div class="w-full md:w-1/2 p-4 flex flex-col justify-around gap-4">
-        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-200 dark:bg-gray-900 hide">
           <div class="flex justify-between">
             <div class="flex flex-col px-4 py-2 gap-3">
-              <p class="text-gray-500">
+              <p class="opacity-75">
                 {{ $t("contact.office.title") }}
               </p>
               <div>
@@ -44,13 +44,13 @@ onMounted(() => {
             </div>
           </div>
         </div>
-        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-200 dark:bg-gray-900 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
               <h2>
                 {{ $t("contact.ceo.name") }}
               </h2>
-              <p class="text-gray-500">
+              <p class="opacity-75">
                 {{ $t("contact.ceo.title") }}
               </p>
             </div>
@@ -64,13 +64,13 @@ onMounted(() => {
             </div>
           </div>
         </div>
-        <div class="w-full rounded-md bg-gray-300 dark:bg-gray-900 hide">
+        <div class="w-full rounded-md bg-gray-200 dark:bg-gray-900 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
             <div class="flex justify-between">
               <h2>
                 {{ $t("contact.cto.name") }}
               </h2>
-              <p class="text-gray-500">
+              <p class="opacity-75">
                 {{ $t("contact.cto.title") }}
               </p>
             </div>
@@ -87,6 +87,7 @@ onMounted(() => {
       </div>
       <div class="h-[40rem] md:w-1/2">
         <iframe
+          sandbox="allow-scripts allow-same-origin"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536.1775950008014!2d18.709886106534025!3d50.53086726198464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710d8f61716ca79%3A0x391222969e93039d!2sMetana%20Sp.k.!5e0!3m2!1spl!2spl!4v1698685660934!5m2!1spl!2spl"
           class="w-full h-full rounded-md hide"
           title="Map to metana"

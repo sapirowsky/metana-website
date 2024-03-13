@@ -10,18 +10,22 @@
         <MachinesCard
           :title="$t('machines.first.title')"
           :img="$t('machines.first.photo')"
+          :alt="$t('machines.first.title')"
         />
         <MachinesCard
           :title="$t('machines.second.title')"
           :img="$t('machines.second.photo')"
+          :alt="$t('machines.second.title')"
         />
         <MachinesCard
           :title="$t('machines.third.title')"
           :img="$t('machines.third.photo')"
+          :alt="$t('machines.third.title')"
         />
         <MachinesCard
           :title="$t('machines.fourth.title')"
           :img="$t('machines.fourth.photo')"
+          :alt="$t('machines.fourth.title')"
         />
       </div>
     </div>

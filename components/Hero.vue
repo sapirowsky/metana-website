@@ -14,7 +14,7 @@
           </h1>
           <div class="flex items-center gap-4">
             <div class="w-4 border rounded border-gray-500"></div>
-            <p class="text-lg md:text-2xl text-[#0099ff] italic">
+            <p class="text-lg md:text-2xl text-[#0071bc] italic">
               {{ $t("hero.question") }}
             </p>
           </div>
@@ -24,14 +24,14 @@
           <div class="flex gap-2 mt-2">
             <a href="#about-us">
               <button
-                class="btn bg-[#0071bc] text-white hover:bg-[#0062a3] border-[#0071bc] hover:border-[#0062a3] hover:text-gray-200"
+                class="font-sans btn btn-outline border bg-[#0071bc] text-gray-100 border-[#0071bc] hover:bg-transparent hover:text-[#0071bc]"
               >
                 {{ $t("hero.learnMore") }}
               </button>
             </a>
             <a href="#contact">
               <button
-                class="btn btn-outline border border-[#0071bc] text-[#0071bc] hover:bg-[#0071bc] hover:text-white hover:border-[#005289]"
+                class="font-sans btn btn-outline border border-[#0071bc] text-[#0071bc] hover:bg-[#0071bc] hover:text-white hover:border-[#005289]"
               >
                 {{ $t("hero.contact") }}
               </button>

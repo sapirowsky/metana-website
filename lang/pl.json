@@ -3,11 +3,11 @@
         "description": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
         "ogTitle": "Metana",
         "ogDescription": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
-        "ogImage": "http://metana.net/linkphoto.png",
-        "ogUrl": "https://www.metana.net/",
+        "ogImage": "http://metana.pl/linkphoto.webp",
+        "ogUrl": "https://www.metana.pl/",
         "twitterTitle": "Metana",
         "twitterDescription": "Jesteśmy firmą zajmującą się produkcją skomplikowanych, precyzyjnych konstrukcji stalowych oraz obróbką metali na terenie Śląska dla wiodących producentów przemysłu elektroenergetycznego, motoryzacyjnego i maszynowego. Wykonujemy usługi w zakresie cięcia laserem, obróbki skrawaniem, spawania, frezowania itp.",
-        "twitterImage": "http://metana.net/linkphoto.png",
+        "twitterImage": "http://metana.pl/linkphoto.webp",
         "twitterCard": "Jeżeli potrzebujesz skomplikowanych detali, wykonanych z najwyższą precyzją to skontaktuj się z nami."
     },
     "navigation": {
@@ -67,19 +67,19 @@
         "title": "Innowacyjne rozwiązania technologiczne",
         "first": {
             "title": "Robot Spawalniczy Panasonic",
-            "photo": "/panasonic.png"
+            "photo": "/panasonic.webp"
         },
         "second": {
             "title": "Tokarka Mazak",
-            "photo": "/mazak.png"
+            "photo": "/mazak.webp"
         },
         "third": {
             "title": "Frezarka Brother",
-            "photo": "/brother.png"
+            "photo": "/brother.webp"
         },
         "fourth": {
             "title": "Tokarka Kovosvit",
-            "photo": "/kovosvit-mas.png"
+            "photo": "/kovosvit-mas.webp"
         }
     },
     "contact": {
@@ -103,7 +103,7 @@
             "mail": "kamil.kruszona"
         }
     },
-    "mail": "metana.net",
+    "mail": "metana.pl",
     "footer": {
         "copyright": "Prawo autorskie",
         "reserved": ", Wszelkie prawa zastrzeżone"

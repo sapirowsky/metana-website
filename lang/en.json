@@ -3,11 +3,11 @@
         "description": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
         "ogTitle": "Metana",
         "ogDescription": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
-        "ogImage": "http://metana.net/linkphoto.png",
-        "ogUrl": "https://www.metana.net/",
+        "ogImage": "http://metana.pl/linkphoto.webp",
+        "ogUrl": "https://www.metana.pl/",
         "twitterTitle": "Metana",
         "twitterDescription": "We are a company specializing in the production of complex, precision steel structures and metal processing in the Silesia region for leading manufacturers in the electro-energetic, automotive, and machinery industries. We provide services in laser cutting, machining, welding, milling, etc.",
-        "twitterImage": "http://metana.net/linkphoto.png",
+        "twitterImage": "http://metana.pl/linkphoto.webp",
         "twitterCard": "If you need complex details, made with the highest precision, contact us."
     },
     "navigation": {
@@ -67,19 +67,19 @@
         "title": "Innovative technological solutions",
         "first": {
             "title": "Panasonic Welding robot",
-            "photo": "/panasonic.png"
+            "photo": "/panasonic.webp"
         },
         "second": {
             "title": "Mazak Lathe",
-            "photo": "/mazak.png"
+            "photo": "/mazak.webp"
         },
         "third": {
             "title": "Brother Milling machine",
-            "photo": "/brother.png"
+            "photo": "/brother.webp"
         },
         "fourth": {
             "title": "Kovosvit Lathe",
-            "photo": "/kovosvit-mas.png"
+            "photo": "/kovosvit-mas.webp"
         }
     },
     "contact": {
@@ -103,7 +103,7 @@
             "mail": "kamil.kruszona"
         }
     },
-    "mail": "metana.net",
+    "mail": "metana.pl",
     "footer": {
         "copyright": "Copyright",
         "reserved": ", All right reserved"
