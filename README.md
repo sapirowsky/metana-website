@@ -4,7 +4,7 @@
     <img src="https://github.com/sapirowsky/metana-website/blob/master/screenshot.webp" width="900" alt="Image of an working app">
 </p>
 
-I really like to learn new things on projects and this company isn't working only for Polish market, so it was perfect timing for me to learn interalization (i18n). It was also first time that I've been using ThreeJS.
+I really like to learn new things on projects and this company isn't working only for Polish market, so it was perfect timing for me to learn internalization (i18n). It was also first time that I've been using ThreeJS.
 
 
 
