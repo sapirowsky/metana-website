@@ -1,8 +1,19 @@
-# Nuxt 3 Minimal Starter
+# Landingpage for Metana
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p align="center">
+    <img src="https://github.com/sapirowsky/metana-website/blob/master/screenshot.webp" width="900" alt="Image of an working app">
+</p>
+
+I really like to learn new things on projects and this company isn't working only for Polish market, so it was perfect timing for me to learn interalization (i18n). It was also first time that I've been using ThreeJS.
+
+
+
+
+
 
 ## Setup
+
+Download this repo and unpack it.
 
 Make sure to install the dependencies:
 
@@ -37,39 +48,3 @@ yarn dev
 # bun
 bun run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
