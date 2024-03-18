@@ -37,6 +37,21 @@ useHead({
 })
 </script>
 <template>
+  <dialog open class="w-full relative">
+    <div
+      class="flex gap-4 justify-center items-center p-4 w-full bg-white dark:bg-[#0C0D13] shadow shadow-gray-300 dark:shadow-gray-800"
+    >
+      <p class="text-black dark:text-white">{{ t("cookies.content") }}</p>
+
+      <form method="dialog">
+        <button
+          class="bg-black dark:bg-white text-white dark:text-black py-2 px-4 rounded"
+        >
+          Ok
+        </button>
+      </form>
+    </div>
+  </dialog>
   <header class="flex justify-center">
     <div class="container px-6 py-2 flex justify-between items-center">
       <NuxtLink

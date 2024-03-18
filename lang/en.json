@@ -10,6 +10,9 @@
         "twitterImage": "http://metana.pl/linkphoto.webp",
         "twitterCard": "If you need complex details, made with the highest precision, contact us."
     },
+    "cookies": {
+        "content": "This website uses cookies to correctly display Google Maps."
+    },
     "navigation": {
         "about": "About Us",
         "faq": "FAQ",
@@ -97,7 +100,7 @@
         },
         "cto": {
             "name": "Kamil Kruszona",
-            "title": "CTO",
+            "title": "Production Manager",
             "number": "+48 503 932 347",
             "numberLink": "+48503932347",
             "mail": "kamil.kruszona"

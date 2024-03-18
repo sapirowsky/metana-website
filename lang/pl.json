@@ -10,6 +10,9 @@
         "twitterImage": "http://metana.pl/linkphoto.webp",
         "twitterCard": "Jeżeli potrzebujesz skomplikowanych detali, wykonanych z najwyższą precyzją to skontaktuj się z nami."
     },
+    "cookies": {
+        "content": "Ta strona używa pliki cookie, w celu poprawnego pokazania map google."
+    },
     "navigation": {
         "about": "O nas",
         "faq": "FAQ",
@@ -97,7 +100,7 @@
         },
         "cto": {
             "name": "Kamil Kruszona",
-            "title": "CTO",
+            "title": "Kierownik Produkcji",
             "number": "+48 503 932 347",
             "numberLink": "+48503932347",
             "mail": "kamil.kruszona"

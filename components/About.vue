@@ -31,7 +31,7 @@ onMounted(() => {
           format="webp"
           quality="100"
           class="h-auto w-1/2 md:w-3/4 rounded-lg"
-          src="/iso.png"
+          src="/iso.webp"
           :alt="$t('about.imgAlt')"
         />
       </div>

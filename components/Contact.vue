@@ -66,11 +66,11 @@ onMounted(() => {
         </div>
         <div class="w-full rounded-md bg-gray-200 dark:bg-gray-900 hide">
           <div class="flex flex-col px-4 py-2 gap-4">
-            <div class="flex justify-between">
-              <h2>
+            <div class="flex justify-between gap-2">
+              <h2 class="flex-1 whitespace-nowrap">
                 {{ $t("contact.cto.name") }}
               </h2>
-              <p class="opacity-75">
+              <p class="opacity-75 text-right">
                 {{ $t("contact.cto.title") }}
               </p>
             </div>
