@@ -1,9 +1,9 @@
 <script setup>
 defineI18nRoute({
   locales: ["pl", "en"],
-})
-const localePath = useLocalePath()
-const { t } = useI18n()
+});
+const localePath = useLocalePath();
+const { t } = useI18n();
 
 useSeoMeta({
   description: t("meta.description"),
@@ -15,7 +15,7 @@ useSeoMeta({
   twitterDescription: t("meta.twitterDescription"),
   twitterImage: t("meta.twitterImage"),
   twitterCard: t("meta.twitterCard"),
-})
+});
 
 useHead({
   title: "Metana",
@@ -34,18 +34,18 @@ useHead({
       href: "/favicon.ico",
     },
   ],
-})
+});
 </script>
 <template>
-  <dialog open class="w-full relative">
+  <dialog open class="relative w-full">
     <div
-      class="flex gap-4 justify-center items-center p-4 w-full bg-white dark:bg-[#0C0D13] shadow shadow-gray-300 dark:shadow-gray-800"
+      class="flex w-full items-center justify-center gap-4 bg-white p-4 shadow shadow-gray-300 dark:bg-[#0C0D13] dark:shadow-gray-800"
     >
       <p class="text-black dark:text-white">{{ t("cookies.content") }}</p>
 
       <form method="dialog">
         <button
-          class="bg-black dark:bg-white text-white dark:text-black py-2 px-4 rounded"
+          class="rounded bg-black px-4 py-2 text-white dark:bg-white dark:text-black"
         >
           Ok
         </button>
@@ -53,13 +53,13 @@ useHead({
     </div>
   </dialog>
   <header class="flex justify-center">
-    <div class="container px-6 py-2 flex justify-between items-center">
+    <div class="container flex items-center justify-between px-6 py-2">
       <NuxtLink
         :to="localePath('/')"
-        class="text-3xl text-[#0071BC] font-researcher-squid"
+        class="font-researcher-squid text-3xl text-[#0071BC]"
         >Metana</NuxtLink
       >
-      <div class="flex justify-center items-center gap-6">
+      <div class="flex items-center justify-center gap-6">
         <Navigation />
         <Controls />
       </div>

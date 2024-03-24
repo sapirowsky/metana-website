@@ -1,17 +1,17 @@
 <script setup>
-const props = defineProps(["title", "img", "alt"])
+const props = defineProps(["title", "img", "alt"]);
 </script>
 <template>
-  <div class="relative w-56 h-80">
+  <div class="relative h-80 w-56">
     <NuxtImg
       :src="props.img"
-      class="absolute max-w-full h-full left-1/2 -translate-x-1/2 object-cover"
+      class="absolute left-1/2 h-full max-w-full -translate-x-1/2 object-cover"
       :alt="props.alt"
     />
     <div
-      class="w-full h-full bg-gradient-to-t from-gray-300 dark:from-gray-900 via-transparent to-transparent rounded-3xl absolute flex items-end justify-center p-2"
+      class="absolute flex h-full w-full items-end justify-center rounded-3xl bg-gradient-to-t from-gray-300 via-transparent to-transparent p-2 dark:from-gray-900"
     >
-      <p class="font-medium text-base text-center">
+      <p class="text-center text-base font-medium">
         {{ props.title }}
       </p>
     </div>

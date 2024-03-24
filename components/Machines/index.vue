@@ -1,12 +1,12 @@
 <template>
-  <div id="machines" class="w-full flex justify-center items-center my-20">
+  <div id="machines" class="my-20 flex w-full items-center justify-center">
     <div
-      class="container px-6 py-4 border-t rounded-3xl border-gray-200 dark:border-gray-700 flex flex-col gap-8 items-center"
+      class="container flex flex-col items-center gap-8 rounded-3xl border-t border-gray-200 px-6 py-4 dark:border-gray-700"
     >
-      <h2 class="text-2xl text-center">
+      <h2 class="text-center text-2xl">
         {{ $t("machines.title") }}
       </h2>
-      <div class="flex flex-wrap gap-2 sm:gap-4 p-2 justify-center">
+      <div class="flex flex-wrap justify-center gap-2 p-2 sm:gap-4">
         <MachinesCard
           :title="$t('machines.first.title')"
           :img="$t('machines.first.photo')"

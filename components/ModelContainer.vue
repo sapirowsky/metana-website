@@ -1,7 +1,7 @@
 <script setup>
-const { pause, resume } = useRenderLoop()
+const { pause, resume } = useRenderLoop();
 
-const { hasFinishLoading, progress } = await useProgress()
+const { hasFinishLoading, progress } = await useProgress();
 </script>
 <template>
   <Transition
@@ -11,7 +11,7 @@ const { hasFinishLoading, progress } = await useProgress()
   >
     <div
       v-show="!hasFinishLoading"
-      class="absolute inset-0 w-full h-full flex justify-center items-center text-black"
+      class="absolute inset-0 flex h-full w-full items-center justify-center text-black"
     >
       <progress class="progress w-1/2" :value="progress" max="100"></progress>
     </div>

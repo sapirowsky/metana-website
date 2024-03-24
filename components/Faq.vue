@@ -1,8 +1,8 @@
 <script setup></script>
 <template>
-  <div id="faq" class="h-max grid place-items-center">
-    <div class="container px-6 py-20 flex flex-col gap-2">
-      <div class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-30">
+  <div id="faq" class="grid h-max place-items-center">
+    <div class="container flex flex-col gap-2 px-6 py-20">
+      <div class="collapse collapse-arrow z-30 bg-gray-300 dark:bg-gray-800">
         <label for="first" class="sr-only">{{ $t("faq.srLabel") }}</label>
         <input
           id="first"
@@ -21,7 +21,7 @@
           </div>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-gray-300 dark:bg-gray-800 z-20">
+      <div class="collapse collapse-arrow z-20 bg-gray-300 dark:bg-gray-800">
         <label for="second" class="sr-only">{{ $t("faq.srLabel") }}</label>
         <input id="second" type="radio" name="my-accordion-2" />
         <div class="collapse-title text-xl font-medium">

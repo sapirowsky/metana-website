@@ -1,21 +1,21 @@
 <script setup>
-const colorMode = useColorMode()
-const { locale, locales } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
+const colorMode = useColorMode();
+const { locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
 </script>
 <template>
   <div class="flex items-center gap-4">
     <div class="dropdown dropdown-end">
       <label
         tabindex="0"
-        class="btn bg-transparent border-none hover:bg-transparent p-0"
+        class="btn border-none bg-transparent p-0 hover:bg-transparent"
       >
-        <UiLanguage class="fill-black dark:fill-white h-6 w-6 md:h-8 md:w-8" />
+        <UiLanguage class="h-6 w-6 fill-black dark:fill-white md:h-8 md:w-8" />
         <UiArrowFacedDown class="fill-gray-800 dark:fill-gray-300" />
       </label>
       <ul
         tabindex="0"
-        class="dropdown-content z-[1] menu p-2 shadow bg-gray-300 dark:bg-gray-800 rounded-box w-max"
+        class="menu dropdown-content rounded-box z-[1] w-max bg-gray-300 p-2 shadow dark:bg-gray-800"
       >
         <li v-for="{ code, name } in locales" :key="code">
           <NuxtLink
@@ -26,7 +26,7 @@ const switchLocalePath = useSwitchLocalePath()
             :external="true"
           >
             <span
-              class="badge badge-sm badge-outline font-mono font-bold tracking-widest opacity-50"
+              class="badge badge-outline badge-sm font-mono font-bold tracking-widest opacity-50"
             >
               {{ code }}
             </span>
@@ -37,7 +37,7 @@ const switchLocalePath = useSwitchLocalePath()
     </div>
     <div class="tooltip tooltip-left" :data-tip="$t('controls.changeTheme')">
       <button
-        class="h-8 w-8 md:h-10 md:w-10 rounded-full cursor-pointer grid place-content-center relative p-[auto]"
+        class="relative grid h-8 w-8 cursor-pointer place-content-center rounded-full p-[auto] md:h-10 md:w-10"
         @click="
           colorMode.preference === 'dark'
             ? (colorMode.preference = 'light')
@@ -46,19 +46,19 @@ const switchLocalePath = useSwitchLocalePath()
       >
         <Transition name="theme-switch">
           <UiDark
-            class="h-8 w-8 md:h-10 md:w-10 theme-icon absolute"
+            class="theme-icon absolute h-8 w-8 md:h-10 md:w-10"
             v-if="colorMode.preference === 'dark'"
           />
         </Transition>
         <Transition name="theme-switch">
           <UiLight
-            class="h-8 w-8 md:h-10 md:w-10 theme-icon absolute"
+            class="theme-icon absolute h-8 w-8 md:h-10 md:w-10"
             v-if="colorMode.preference === 'light'"
           />
         </Transition>
         <Transition name="theme-switch">
           <UiTheme
-            class="h-8 w-8 md:h-10 md:w-10 theme-icon absolute"
+            class="theme-icon absolute h-8 w-8 md:h-10 md:w-10"
             v-if="colorMode.preference === 'system'"
           />
         </Transition>
@@ -71,7 +71,9 @@ const switchLocalePath = useSwitchLocalePath()
 <style>
 .theme-switch-enter-active,
 .theme-switch-leave-active {
-  transition: opacity, rotate 0.3s ease;
+  transition:
+    opacity,
+    rotate 0.3s ease;
 }
 
 .theme-switch-leave-from,

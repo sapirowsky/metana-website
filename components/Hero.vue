@@ -2,36 +2,36 @@
 <template>
   <div
     id="home"
-    class="md:min-h-[calc(100vh-64px)] flex justify-center items-center"
+    class="flex items-center justify-center md:min-h-[calc(100vh-64px)]"
   >
-    <div class="container 2xl:max-w-screen-xl px-6 py-2">
+    <div class="container px-6 py-2 2xl:max-w-screen-xl">
       <div
-        class="w-full h-full flex flex-col-reverse md:flex-row gap-6 md:gap-0 items-center justify-center md:mt-0"
+        class="flex h-full w-full flex-col-reverse items-center justify-center gap-6 md:mt-0 md:flex-row md:gap-0"
       >
         <div class="flex flex-col justify-center gap-2 md:flex-[2]">
-          <h1 class="text-4xl md:text-5xl font-bold">
+          <h1 class="text-4xl font-bold md:text-5xl">
             {{ $t("hero.heading") }}
           </h1>
           <div class="flex items-center gap-4">
-            <div class="w-4 border rounded border-gray-500"></div>
-            <p class="text-lg md:text-2xl text-[#0071bc] italic">
+            <div class="w-4 rounded border border-gray-500"></div>
+            <p class="text-lg italic text-[#0071bc] md:text-2xl">
               {{ $t("hero.question") }}
             </p>
           </div>
           <p class="text-xl md:text-2xl">
             {{ $t("hero.answer") }}
           </p>
-          <div class="flex gap-2 mt-2">
+          <div class="mt-2 flex gap-2">
             <a href="#about-us">
               <button
-                class="font-sans btn btn-outline border bg-[#0071bc] text-gray-100 border-[#0071bc] hover:bg-transparent hover:text-[#0071bc]"
+                class="btn btn-outline border border-[#0071bc] bg-[#0071bc] font-sans text-gray-100 hover:bg-transparent hover:text-[#0071bc]"
               >
                 {{ $t("hero.learnMore") }}
               </button>
             </a>
             <a href="#contact">
               <button
-                class="font-sans btn btn-outline border border-[#0071bc] text-[#0071bc] hover:bg-[#0071bc] hover:text-white hover:border-[#005289]"
+                class="btn btn-outline border border-[#0071bc] font-sans text-[#0071bc] hover:border-[#005289] hover:bg-[#0071bc] hover:text-white"
               >
                 {{ $t("hero.contact") }}
               </button>
@@ -39,10 +39,10 @@
           </div>
         </div>
         <div
-          class="w-3/4 aspect-square md:flex-[2] relative flex items-center justify-center"
+          class="relative flex aspect-square w-3/4 items-center justify-center md:flex-[2]"
         >
           <div
-            class="bg-[#0071bc] w-5/6 h-5/6 custom-bg-border overflow-hidden"
+            class="custom-bg-border h-5/6 w-5/6 overflow-hidden bg-[#0071bc]"
           >
             <LazyModelContainer />
           </div>

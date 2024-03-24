@@ -1,5 +1,5 @@
 <script setup>
-const { t } = useI18n()
+const { t } = useI18n();
 const list = [
   {
     img: "./panasonic.png",
@@ -25,30 +25,30 @@ const list = [
     title: t("faq.second.answer.fourth.title"),
     desc: t("faq.second.answer.fourth.about"),
   },
-]
-const directionBinded = ref("5rem")
-const lastItem = ref(0)
-const currentItem = ref(0)
+];
+const directionBinded = ref("5rem");
+const lastItem = ref(0);
+const currentItem = ref(0);
 const changeSlide = async (slide, direction) => {
-  directionBinded.value = await direction
-  lastItem.value = currentItem.value
+  directionBinded.value = await direction;
+  lastItem.value = currentItem.value;
   if (slide < 0) {
-    currentItem.value = list.length - 1
+    currentItem.value = list.length - 1;
 
-    return
+    return;
   }
   if (slide >= list.length) {
-    currentItem.value = 0
-    return
+    currentItem.value = 0;
+    return;
   }
 
-  currentItem.value = slide
-}
+  currentItem.value = slide;
+};
 </script>
 <template>
-  <ul class="relative w-full h-full">
+  <ul class="relative h-full w-full">
     <span
-      class="absolute top-1/2 -translate-y-1/2 h-max -left-8 md:-left-5 z-20"
+      class="absolute -left-8 top-1/2 z-20 h-max -translate-y-1/2 md:-left-5"
     >
       <button class="btn p-2" @click="changeSlide(currentItem - 1, '-5rem')">
         <UiArrowBack />
@@ -57,23 +57,23 @@ const changeSlide = async (slide, direction) => {
     <li
       v-for="(item, index) in list"
       :key="index"
-      class="flex flex-col md:flex-row gap-2 transition-transform pl-6 md:pl-0 pr-6 md:pr-10"
+      class="flex flex-col gap-2 pl-6 pr-6 transition-transform md:flex-row md:pl-0 md:pr-10"
       :class="
         currentItem === index
           ? 'visible translate-x-0'
           : 'carousel-invisible-card'
       "
     >
-      <div class="w-full md:w-1/2 grid place-content-center">
-        <NuxtImg class="max-w-full max-h-80" :src="item.img" :alt="item.alt" />
+      <div class="grid w-full place-content-center md:w-1/2">
+        <NuxtImg class="max-h-80 max-w-full" :src="item.img" :alt="item.alt" />
       </div>
-      <div class="w-full md:w-1/2 flex flex-col gap-4">
+      <div class="flex w-full flex-col gap-4 md:w-1/2">
         <h2 class="text-2xl font-bold">{{ item.title }}</h2>
         <p>{{ item.desc }}</p>
       </div>
     </li>
     <span
-      class="absolute top-1/2 -translate-y-1/2 h-max -right-8 md:-right-5 z-20"
+      class="absolute -right-8 top-1/2 z-20 h-max -translate-y-1/2 md:-right-5"
     >
       <button class="btn p-2" @click="changeSlide(currentItem + 1, '5rem')">
         <UiArrowForward />
